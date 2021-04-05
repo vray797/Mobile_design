@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InkoopMobile</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Noto+Sans&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .whole{
+            height: 100vh;
+            display: flex;
+            background-color: black;
+            justify-content: center;
+            align-items: center;
+        }
+        .font{
+            font-family: 'Open Sans', sans-serif;
+        }
+        .font2{
+            font-family: 'Abril Fatface', cursive;   
+        }
+        .container{
+            height: 100vh;
+            width: 24rem;
+            padding: 2rem;
+            background-color: white;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 2fr 4fr 2fr;
+        }
+        .top{
+            display: flex;
+            align-items: center;
+            justify-items: center;
+        }
+        .hamburger{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+			width:25%;
+        }
+        .box{
+            height: 50%;
+            width: 50%;
+        }
+        #bar1{
+			height:3px;
+			width:50%;
+			background:#ff4e4e;
+			border-radius:3px;
+		}
+		#bar2{
+			height:3px;
+			width:80%;
+			background:#ff4e4e;
+			margin-top:5px;
+			border-radius:3px;
+		}
+		#bar3{
+			height:3px;
+			width:70%;
+			border-radius:3px;
+			background:#ff4e4e;
+			margin-top:6px;
+		}
+        .lorem{
+            display: flex;
+            width: 50%;
+            font-size: 1.6rem;
+            align-items: center;
+            justify-content: center;
+        }
+        .shop{
+            display: flex;
+            width: 25%;
+            justify-content: flex-end;
+        }
+        .cart{
+            height: 1.7rem;
+            width: 1.7rem;
+        }
+        .what{
+            font-size: 1.7rem;
+            align-self: center;
+        }
+        .icons{
+            display: grid;
+            grid-gap: 1rem;
+        }
+        .icons>div{
+            display: flex;
+            height: 12rem;
+            flex-direction: column;
+            border-radius: 2rem;
+            box-shadow: 0px 7px 20px -10px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 0px 7px 20px -10px rgba(0,0,0,0.75);
+            -moz-box-shadow: 0px 7px 20px -10px rgba(0,0,0,0.75);
+            justify-content: center;
+            align-items: center;
+            color: black;
+            font-size: 0.7rem;
+            font-weight: 800;
+        }
+        .taco{
+            grid-row: 1/2;
+            grid-column: 1/2;
+        }
+        .pizza{
+            grid-row: 1/2;
+            grid-column: 2/3;
+        }
+        .burger{
+            grid-row: 2/3;
+            grid-column: 1/2;
+        }
+        .nachos{
+            grid-row: 2/3;
+            grid-column: 2/3;
+        }
+        .fit-picture{
+            height: 8rem;
+            width: 8rem;
+            border-radius: 8rem;
+            padding: 1rem;
+        }
+        .discription{
+            justify-self: center;
+            align-self: center;
+            font-size: 1rem;
+            padding: 0.7rem;
+            color: grey;
+        }
+        .line{
+            border-top: 2px solid #BE4646;
+            width: 20%;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="whole">
+        <div class="container">
+            <div class="top">
+                <div class="hamburger">
+                    <div class="box">
+                        <div id="bar1"></div>
+			            <div id="bar2"></div>
+			            <div id="bar3"></div>
+                    </div>
+                </div>
+                <div class="lorem font2"><p>Lorem</p></div>
+                <div class="shop"><img class="cart" src="assets/shopping.png"></div>
+            </div>
+            <div class="what font2"><p>What are you</p><p>having for lunch?</p></div>
+            <div class="icons font">
+                <div class="taco"><img  class=" fit-picture" src="assets/mexican taco.jpg"><p>Mexican Taco</p></div>
+                <div class="pizza"><img class=" fit-picture" src="assets/pizza.png"><p>Farmhouse Pizza</p></div>
+                <div class="burger"><img class=" fit-picture" src="assets/burger.jpg"><p>Chicken Burger</p></div>
+                <div class="nachos "><img class=" fit-picture" src="assets/nachos.jpg"><p>Loaded Nachos</p></div>
+            </div>
+            <div class="discription font"><p>Lorem ipsum dolor sit amet, consectetur</p><p>adipiscing elit, sed do eiusmod tempor</p><p>incididunt ut labore et.</p><p class="line"></p></div>
+        </div>
+    </div>
+</body>
+</html>
